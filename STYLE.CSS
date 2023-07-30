@@ -1,0 +1,139 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: grey;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url("tomas-martinez-1vlUaiEQR6k-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 200px 0;
+}
+
+.menu {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 100px 0;
+    background-image: url("janice-lin-yUIN4QWKCTw-unsplash.jpg");
+    background-size: cover;
+    height: 400px;
+    font-size: 25px;
+    color:tomato;
+    text-align: left;
+}
+
+.menu h2 {
+    margin-top: 0;
+}
+
+.about {
+    padding: 100px 0;
+}
+
+.contact {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 100px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Responsive styles */
+
+/* For screens less than or equal to 768px (e.g., mobile phones) */
+@media screen and (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .hero {
+        padding: 100px 0;
+    }
+    .menu {
+        padding: 50px 0;
+    }
+    .menu h2 {
+        font-size: 20px;
+    }
+    .about {
+        padding: 50px 0;
+    }
+    .contact {
+        padding: 50px 0;
+    }
+}
+
+/* For screens greater than 768px but less than or equal to 1024px (e.g., tablets) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        padding: 10px;
+    }
+    .menu {
+        padding: 80px 0;
+    }
+    .menu h2 {
+        font-size: 22px;
+    }
+}
+
+/* For screens greater than 1024px (e.g., desktops) */
+@media screen and (min-width: 1025px) {
+    .container {
+        padding: 20px;
+    }
+    .menu {
+        padding: 100px 0;
+    }
+}
